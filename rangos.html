@@ -8,12 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Aqa Manager! | </title>
+    <title>Aqa Manager! | Rangos</title>
 
     <!-- Bootstrap -->
     <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="plugins/iCheck/skins/flat/green.css" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="css/custom.min.css" rel="stylesheet">
 
@@ -52,8 +54,7 @@
                             <ul class="nav side-menu">
                                 <li><a><i class="fa fa-home"></i> Inicio <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="index.html">Lecturas</a></li>
-                                        <li><a href="index.html">Actualizar Lecturas</a></li>
+                                        <li><a href="/aqamanager/inicio.html">Lecturas</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -61,11 +62,11 @@
                         <div class="menu_section">
                             <h3>Configuración</h3>
                             <ul class="nav side-menu">
-                                <li><a><i class="fa fa-cog"></i> Configuración <span class="fa fa-chevron-down"></span></a>
+                                <li class="active"><a><i class="fa fa-cog"></i> Configuración <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="form.html">Rangos</a></li>
-                                        <li><a href="form_advanced.html">Clientes</a></li>
-                                        <li><a href="form_advanced.html">Contadores</a></li>
+                                        <li class="current-page"><a href="/aqamanager/rangos.html">Rangos</a></li>
+                                        <li><a href="/aqamanager/clientes.html">Clientes</a></li>
+                                        <li><a href="/aqamanager/contadores.html">Contadores</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -160,7 +161,7 @@
                     <div class="page-title">
                         <div class="title_left">
                             <!-- Titulo Pagina -->
-                            <h3>Lecturas</h3>
+                            <h3>Rangos</h3>
                         </div>
 
                         <div class="title_right">
@@ -182,7 +183,7 @@
                             <div class="x_panel">
                                 <div class="x_title">
                                     <!-- Titulo Pagina -->
-                                    <h2>Lecturas</h2>
+                                    <h2>Listado de Rangos</h2>
                                     <ul class="nav navbar-right panel_toolbox">
                                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
@@ -195,13 +196,108 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
+                                        <!--<li><a class="close-link"><i class="fa fa-close"></i></a></li>-->
                                     </ul>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
-                                    AGREGUE EL CONTENIDO AQUI...
+                                    <br />
+                                    <div class="table-responsive">
+                                        <table class="table table-striped jambo_table bulk_action">
+                                            <thead>
+                                                <tr class="headings">
+                                                    <th>
+                                                        <input type="checkbox" id="check-all" class="flat">
+                                                    </th>
+                                                    <th class="column-title">Rango #</th>
+                                                    <th class="column-title">Mínimo</th>
+                                                    <th class="column-title">Máximo</th>
+                                                    <th class="column-title">Precio</th>
+                                                    <th class="column-title">Precio Total Rango</th>
+                                                    <th class="column-title no-link last"><span class="nobr">Acciones</span>
+                                                    </th>
+                                                    <th class="bulk-actions" colspan="7">
+                                                        <a class="antoo" style="color:#fff; font-weight:500;">Selección ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr class="even pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">1</td>
+                                                    <td class=" ">0</td>
+                                                    <td class=" ">20</td>
+                                                    <td class=" ">$10400</td>
+                                                    <td class=" ">$10400</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="odd pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">2</td>
+                                                    <td class=" ">21</td>
+                                                    <td class=" ">30</td>
+                                                    <td class=" ">$850</td>
+                                                    <td class=" ">$10400</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="even pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">3</td>
+                                                    <td class=" ">31</td>
+                                                    <td class=" ">50</td>
+                                                    <td class=" ">$1400</td>
+                                                    <td class=" ">$18900</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="odd pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">4</td>
+                                                    <td class=" ">51</td>
+                                                    <td class=" ">75</td>
+                                                    <td class=" ">$2100</td>
+                                                    <td class=" ">$46900</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="even pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">5</td>
+                                                    <td class=" ">76</td>
+                                                    <td class=" ">100</td>
+                                                    <td class=" ">$2700</td>
+                                                    <td class=" ">$99400</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="odd pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">6</td>
+                                                    <td class=" ">101</td>
+                                                    <td class=" ">2000</td>
+                                                    <td class=" ">$3850</td>
+                                                    <td class=" ">$166900</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -213,6 +309,7 @@
             <!-- footer content -->
             <footer>
                 <div class="pull-right">
+                    <big>Desarrollado por: GeniusBross.</big>
                     <small> Gentelella - Bootstrap Admin Template by Colorlib</small>
                 </div>
                 <div class="clearfix"></div>
@@ -225,6 +322,8 @@
     <script src="plugins/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.min.js"></script>
 </body>
