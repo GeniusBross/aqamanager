@@ -14,6 +14,8 @@
     <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="plugins/iCheck/skins/flat/green.css" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="css/custom.min.css" rel="stylesheet">
 
@@ -43,7 +45,7 @@
                     </div>
                     <!-- /menu profile quick info -->
 
-                    <br />
+                    <br/>
 
                     <!-- sidebar menu -->
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
@@ -53,6 +55,7 @@
                                 <li><a><i class="fa fa-home"></i> Inicio <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="inicio.html">Lecturas</a></li>
+                                        <li><a href="/impresion.html">Impresión</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -60,7 +63,8 @@
                         <div class="menu_section">
                             <h3>Configuración</h3>
                             <ul class="nav side-menu">
-                                <li class="active"><a><i class="fa fa-cog"></i> Configuración <span class="fa fa-chevron-down"></span></a>
+                                <li class="active"><a><i class="fa fa-cog"></i> Configuración <span
+                                    class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="rangos.html">Rangos</a></li>
                                         <li class="current-page"><a href="clientes.html">Clientes</a></li>
@@ -73,22 +77,22 @@
                     </div>
                     <!-- /sidebar menu -->
 
-                    <!-- /menu footer buttons 
-                    <div class="sidebar-footer hidden-small">
-                        <a data-toggle="tooltip" data-placement="top" title="Settings">
-                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                        </a>
-                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-                        </a>
-                        <a data-toggle="tooltip" data-placement="top" title="Lock">
-                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-                        </a>
-                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                    <!-- /menu footer buttons -->
+                    <!-- /menu footer buttons
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="Settings">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Lock">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- /menu footer buttons -->
                 </div>
             </div>
 
@@ -109,11 +113,11 @@
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
                                     <li><a href="javascript:;"> Perfil</a></li>
                                     <!--<li>
-                                        <a href="javascript:;">
-                                            <span class="badge bg-red pull-right">50%</span>
-                                            <span>Settings</span>
-                                        </a>
-                                    </li>-->
+                                    <a href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>-->
                                     <li><a href="javascript:;">Ayuda</a></li>
                                     <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Salir</a></li>
                                 </ul>
@@ -127,7 +131,7 @@
                                 <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                     <li>
                                         <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
                                             <span>
                                             <span>Cliente UNO</span>
                                             <span class="time">12 Junio 2017</span>
@@ -183,10 +187,100 @@
                                     <!-- Titulo Pagina -->
                                     <h2>Contadores</h2>
                                     <ul class="nav navbar-right panel_toolbox">
+
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_panel" style="height:auto;">
+                                    <div class="x_title">
+                                        <!-- Titulo Pagina -->
+                                        <h2>Formulario Contadores</h2>
+                                        <ul class="nav navbar-right panel_toolbox">
+                                            <li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><i class="fa fa-wrench"></i></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Settings 1</a>
+                                                    </li>
+                                                    <li><a href="#">Settings 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!--<li><a class="close-link"><i class="fa fa-close"></i></a></li>-->
+                                        </ul>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content" style="display:none">
+
+                                        <form class="form-horizontal form-label-left" novalidate>
+
+                                            <p>Los campos con (*) son obligatorios.
+                                            </p>
+
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">IdContador
+                                                <span class="required">*</span>
+                                            </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input id="name" class="form-control col-md-7 col-xs-12" name="name" required="required" type="tel">
+                                                </div>
+                                            </div>
+
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Nit o
+                                                Cédula<span class="required">*</span>
+                                            </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="number" name="number" required="required" data-validate-length-range="12" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="lecAnt">Lectura Anterior
+                                                <span class="required">*</span>
+                                            </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="number" id="lecAnt" name="lecAnt" required="required" data-validate-length-range="1,5" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="lecActual">Lectura Actual
+                                                <span class="required">*</span>
+                                            </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="number" id="lecActual" name="lecActual" required="required" data-validate-length-range="1,5" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="state">Estado
+                                                <span class="required">*</span>
+                                            </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input id="state" required="required" type="checkbox" name="state" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="ln_solid"></div>
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-md-offset-3">
+                                                    <button type="submit" class="btn btn-primary">Cancelar</button>
+                                                    <button id="send" type="submit" class="btn btn-success">Agregar</button>
+                                                </div>
+                                            </div>
+                                            <!--  Hola  Fin-->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <!-- Titulo Pagina -->
+                                    <h2>Consulta Contadores</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
                                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><i class="fa fa-wrench"></i></a>
                                             <ul class="dropdown-menu" role="menu">
                                                 <li><a href="#">Settings 1</a>
                                                 </li>
@@ -194,11 +288,65 @@
                                                 </li>
                                             </ul>
                                         </li>
+                                        <!--<li><a class="close-link"><i class="fa fa-close"></i></a></li>-->
                                     </ul>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
                                     AGREGUE EL CONTENIDO AQUI...
+                                    <!-- Inicio Tabla-->
+
+                                    <div class="table-responsive">
+                                        <table class="table table-striped jambo_table bulk_action">
+                                            <thead>
+                                                <tr class="headings">
+                                                    <th>
+                                                        <input type="checkbox" id="check-all" class="flat">
+                                                    </th>
+                                                    <th class="column-title">IdContador </th>
+                                                    <th class="column-title">Nit o Cédula</th>
+                                                    <th class="column-title">Lectura Anterior</th>
+                                                    <th class="column-title">Lectura Actual</th>
+                                                    <th class="column-title">Estado</th>
+                                                    <th class="column-title no-link last"><span class="nobr">Acciones</span>
+                                                    </th>
+                                                    <th class="bulk-actions" colspan="7">
+                                                        <a class="antoo" style="color:#fff; font-weight:500;">Selección ( <span
+                                                        class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr class="even pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">500</td>
+                                                    <td class=" ">1020433205</td>
+                                                    <td class=" ">0</td>
+                                                    <td class=" ">20</td>
+                                                    <td class=" "><input type="checkbox" checked="true"> Activo</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="even pointer">
+                                                    <td class="a-center ">
+                                                        <input type="checkbox" class="flat" name="table_records">
+                                                    </td>
+                                                    <td class=" ">501</td>
+                                                    <td class=" ">1020433204</td>
+                                                    <td class=" ">100</td>
+                                                    <td class=" ">200</td>
+                                                    <td class=" "><input type="checkbox"> Inactivo</td>
+                                                    <td class=" last"><a href="#">Editar</a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <!-->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -223,6 +371,8 @@
     <script src="plugins/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.min.js"></script>
 </body>
